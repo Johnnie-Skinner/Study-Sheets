@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Study sheet Page 2 </title>
+  </head>
+  <body>
+    <h1>This is page 2</h1>
+
+<p> Following is used to create "table" elements. These elements include:
+  <ul>
+    <li>table rows "tr"</li>
+    <li>"td" elements or cell items in the table</li>
+    <li> "th" to create table header</li>
+    <li> "thead" and "tbody" sections to make the table organized</li>
+  </ul>
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Sex</th>
+    </thead>
+  <tbody>
+    <tr>
+      <td>Melisa</td>
+      <td>23</td>
+      <td>female</td>
+    </tr>
+    <tr>
+      <td>Jes</td>
+      <td>27</td>
+      <td>yes please!</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Now its time for forms
+  <ul>
+    <li>"form" is used to contain a form or sets of forms</li>
+    <li>"input" self closing is what goes inside of the form</li>
+    <li>"label"</li>
+  </ul>
+</p>
+
+  <form action="where the info is going" method="get/post">
+    <!-- inputs go here -->
+    <input type="text">
+    <input type="date">
+    <input type="color">
+    <input type="file">
+    <input type="checkbox">
+  </form>
+
+<!-- an example of a simple login form -->
+<p>Here is a simple sign in form as example</p>
+  <h2>Sign In</h2>
+
+  <form action="/sign-in-url" method="post">
+    <input name="username" type="text" placeholder="username">
+    <input type="password" placeholder="password">
+    <button>Login</button>
+  </form>
+
+<p>for forms to be read by the visually impaired we use labels. labels contain:
+  <ul>
+    <li> the inputs can either be nested in the label or can contain:
+      <ul>
+        <li>"for" attributes</li>
+        <li>and "id" attributes</li>
+        <!--<label for="username">Username:
+            <input id="username" type="text">-->
+      </ul>
+    </li>
+  </ul>
+</p>
+
+<p> here is a login form with labels</p>
+<!-- login form with labels -->
+<form>
+  <label>
+    Username:
+    <input type="text" placeholder="Username">
+  </label>
+  <label>
+    Password:
+    <input type="password" placeholder="password">
+  </label>
+  <input type="submit">
+</form>
+
+<p>in order to make an input required simply add "required" to the end of an "input" argument</p>
+<form>
+  <label>
+    Username:
+    <input type="text" placeholder="Username"required>
+  </label>
+  <label>
+    Password:
+    <input type="password" placeholder="password"required>
+  </label>
+  <input type="submit">
+</form>
+
+<p>there are also type validations to require specific formats of responses.
+  the simplest example is the "email" input type demonstrated below.</p>
+  <form>
+    <label>
+      email:
+      <input type="email" placeholder="email"required>
+    </label>
+    <label>
+      Password:
+      <input type="password" placeholder="password"required>
+    </label>
+    <input type="submit">
+  </form>
+
+  <p> there are also "radio" inputs, "select" tag inputs, and "textarea" inputs</p>
+<h3>radio inputs:<h3>
+  <form>
+    <label for="radio">radio:</label>
+    <input id="radio" type="radio">
+  </form>
+<p> a working example fully labeled looks like this</p>
+
+<h3>Do you prefer cats or dogs?</h3?>
+<form>
+  <label for="cats">cats</label>
+  <input name="petchoice" id="cats" type="radio" value="cats">
+  <label for="dogs">dogs</label>
+  <input name="petchoice" id="dogs" type="radio" value="dogs">
+
+  <button>go</button>
+ </form>
+
+<p>the next type of input is a "select" tag, which creates dropdown menu's</p>
+
+<form>
+  <select name="options">
+    <option value="1">option1</option>
+    <option value="2">option2</option>
+  </select>
+  <button>Go</Button>
+</form>
+
+<p>finally we will create a "textarea" tag to take longer written responses.</p>
+<h3>the "textarea" size is determined by two attributes:</h3>
+<ul>
+  <li>"rows" rows="x"</li>
+  <li>"col" col="x"</li>
+</ul>
+<p> a working example would look like this:</p>
+<form>
+  <textarea name="paragraph" rows="10" cols="50">
+  </textarea>
+  <button>submit</button>
+</form>
+
+  </body>
+</html>
