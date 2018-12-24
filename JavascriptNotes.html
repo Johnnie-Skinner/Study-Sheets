@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style media="screen">
+      body{
+        background-color: aqua;
+      }
+    </style>
+    <title>Javascript Notes</title>
+  </head>
+  <body>
+    <h1 class="text-center">Javascript Notes!</h1>
+
+    <p class=" bg-dark text-light">5 primitive data types in javascript are Numbers, Strings, Booleans, null, and undefined</p>
+    <ul>These data types are easy to differentiate:
+      <li>Numbers:
+        <ul>
+          <li>4</li>
+          <li>9.3</li>
+          <li>-10</li>
+        </ul>
+      </li>
+      <li>Strings:
+        <ul>
+          <li>"Hello World"</li>
+          <li>"43"</li>
+        </ul>
+      </li>
+      <li>Booleans:
+        <ul>
+          <li>true</li>
+          <li>false</li>
+        </ul>
+      </li>
+      <li>null and undefined
+        <ul>
+          <li>null</li>
+          <li>undefined</li>
+        </ul>
+      </li>
+    </ul>
+    <p class="bg-dark text-light">escape characters are useful in strings to tell javascript to include characters that are usually functional</p>
+    <ul>ie:
+      <li>"singin \"do wah diddy\"" would return as</li>
+      <li>singin "do wah diddy"</li>
+    </ul>
+    <p class=" bg-dark text-light">strings have a length property (.length) which can be accessed like an index: []</p>
+      <ul>
+        <li>"hello".length</li>
+        <li>returns: 5</li>
+        <li>and "hello"[3]</li>
+        <li>returns: l</li>
+        <li>"hello"[0]</li>
+        <li>returns: h</li>
+      </ul>
+
+    <p class=" bg-dark text-light"> variables follow a specific format of "var yourvariablename = yourvalue;"</p>
+    <ul>
+      <li>var name = "rusty";</li>
+      <li>var secretNumber = 8611;</li>
+      <li>var isAdorable = true ;</li>
+    </ul>
+
+    <p class=" bg-dark text-light">null and undefined are really values variables can be set to.</p>
+    <ul>
+      <li>null is used to explicitly declare something as having no value or being empty</li>
+      <li>undefined is used to mark something as empty "so far"</li>
+    </ul>
+
+    <p class=" bg-dark text-light"> 3 methods useful in javascript are alerts, prompts and console.log</p>
+    <ul>
+      <li>alert:
+        <ul>
+          <li>alert("Hello There!!!")</li>
+          <li>= Hello There!!!</li>
+          <li>alert(3*4)</li>
+          <li>= 12</li>
+        </ul>
+      </li>
+      <li>console.log:
+        <ul>
+          <li>console.log("hello from the console!")</li>
+          <li>= hello from the console!</li>
+          <li>but is only printed in the console</li>
+        </ul>
+      </li>
+      <li>prompt:
+        <ul>
+          <li>prompt("What is your name?")</li>
+          <li>asks the user for the information</li>
+          <li>which can be stored in a var like this</li>
+          <li>var userName = prompt("What is your name?")</li>
+        </ul>
+      </li>
+    </ul>
+
+    <p class=" bg-dark text-light">conditional statements in javascript!!!</p>
+    <ul> <h2>Comparison operators are the lifeblood of conditionals</h2>
+      <li>greater than: ></li>
+      <li>greater than or equal to: >=</li>
+      <li>less than: <</li>
+      <li>less than or equal to: <=</li>
+      <li>equal to: ==</li>
+      <li>not equal to: !=</li>
+      <li>equal value and type: ===</li>
+      <li>not equal value or type: !==</li>
+    </ul>
+    <ul> <h2>Logical Operators</h2>
+      <li>AND: &&
+        <ul>
+          <li> 5 < 10 && 5!==5</li>
+          <li>returns false</li>
+        </ul>
+      </li>
+      <li>OR: ||
+        <ul>
+          <li>9 > 9 || 5 === 5</li>
+          <li>returns: true</li>
+        </ul>
+      </li>
+      <li>NOT: !
+        <ul>
+          <li>!(5===9)</li>
+          <li>returns: true</li>
+        </ul>
+      </li>
+    </ul>
+
+    <ul><h2>The only inherently false Values in javascript are</h2>
+      <li>false</li>
+      <li>0</li>
+      <li>""</li>
+      <li>null</li>
+      <li>undefined</li>
+      <li>NaN</li>
+      <h5>Everything else is "Truthy"!!!</h5>
+    </ul>
+
+    <p class="bg-dark text-light">loops are important in writing DRY code</p>
+      <ul><h2>types of loops:</h2>
+        <li><h5>while loops run while a condition is true</h5>
+          <ul>this will define a var and print it into the console while counting until it reaches a given value.
+            <li>var count = 1</li>
+            <li>while(count < 6) {</li>
+            <li>console.log("count is: " + count);</li>
+            <li>count++;</li>
+            <li>}</li>
+          </ul>
+        </li>
+        <li><h5>for loops run under specific sets of circumstances:</h5>
+          <ul>
+            <li>for(initiator; condition; step){ }
+              <ul> printing number 1-5 with a for loop:
+                <li>for(var count=0; count<6; count++) {</li>
+                <li>console.log(count);</li>
+                <li>}</li>
+              </ul>
+              it is important to note that variables created inside a for loop exist only inside the loop!
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <p class="bg-dark text-light">indexOf is important for checking to see if words are present at all in  string.</p>
+      <ul> while (string.indexOf("yes")===-1 && string.indexOf("yeah")===-1)
+        <li>remember index of a string starts at 0</li>
+        <li>and javascript reads values not present in a string as -1</li>
+        <li>says while yes does not exist in the string AND yeah does not exist in this string</li>
+        <li>so this while loop will continue until the string contains either yes, or yeah specifically.</li>
+      </ul>
+
+      
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
