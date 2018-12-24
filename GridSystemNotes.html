@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap Grid system Notes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<style media="screen">
+  .pink {
+    background: pink;
+    border: 1px solid purple;
+  }
+</style>
+  </head>
+
+  <body>
+    <div>
+      <h1>Grid System Basics</h1>
+      <p>bootsrap grid contains and scales up to 12 columns or units.</p>
+      <p>grid must always be inside of a container</p>
+      <p> format for div order is container -> row -> col</p>
+    </div>
+
+    <div class="container">
+      <div class="row">
+          <div class="col-md-3 col-sm-6 pink">
+            <div class="row">
+              <div class="col-lg-6 col-sm-6 col-6 pink">1st</div>
+              <div class="col-lg-6 col-sm-6 col-6 pink">2nd</div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 pink">col-lg-1</div>
+          <div class="col-md-3 col-sm-6 pink">col-lg-1</div>
+          <div class="col-md-3 col-sm-6 pink">
+            <div class="row">
+              <div class="col-lg-2 col-2 pink">1</div>
+              <div class="col-lg-2 col-2 pink">2</div>
+              <div class="col-lg-2 col-2 pink">3</div>
+              <div class="col-lg-2 col-2 pink">4</div>
+              <div class="col-lg-2 col-2 pink">5</div>
+              <div class="col-lg-2 col-2 pink">6</div>
+            </div>
+          </div>
+      </div>
+    </div>
+      <p>4 sizes of grids .col- (phones) .col-sm (tablets) .col-md(desktops/laptops) .col-large (desktops)</p>
+
+  </body>
+</html>
