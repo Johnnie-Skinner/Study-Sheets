@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style media="screen">
+      body{
+        background-color: aqua;
+      }
+    </style>
+    <title>Javascript Notes P2</title>
+  </head>
+  <body>
+    <h1 class="text-center">Javascript Notes!</h1>
+
+    <p class=" bg-dark text-light">Functions are probably the most important aspects of javascript. They let us wrap bits of code into REUSABLE packages.</p>
+    <ol>
+      <li><strong>Declare a function:</strong>
+        <ul> function doSomething( ) {
+          <li>console.log("Hello World");</li>
+          }
+        </ul>
+      </li>
+      <li><strong>and then call it:</strong>
+        <ul>
+          <li>doSomething( );</li>
+        </ul>
+      </li>
+    </ol>
+
+    <p class="bg-dark text-light">Arguments are how we can write functions that take inputs.</p>
+    <ul><strong>in this example the function "square" receives input "x" and prints the result of its square in the console</strong>
+      <li>function square(x) {</li>
+      <li>console.log (x*x);</li>
+      <li>}</li>
+      <strong>where x is the argument of the function and is usually defined by either input or another funciton.</strong>
+    </ul>
+    <p class="bg-dark text-light">functions can accept more than one argument as well</p>
+    <ul><strong>Function for calculating area:</strong>
+      <li>function area(length,width) {</li>
+        <li>console.log(length*width);</li>
+        <li>}</li>
+    </ul> called with: area(x,y);
+    <ul><strong>function to greet multiple people:</strong>
+      <li>function greet(person1, person2, person3) {</li>
+        <li>console.log("hi " + person1);</li>
+        <li>console.log("hi " + person2);</li>
+        <li>console.log("hi " + person3);</li>
+    </ul><strong>called with: greet("Harry","Ron","Hermione");</strong>
+  </body>
+</html>
+
+<p class="bg-dark text-light">up until now we have used console.log to print our returned values into the console. This is only useful to test outputs. Much more useful is the return funtion.</p>
+<ul><strong>return:</strong>
+  <li>function square(x) {</li>
+    <li>return (x*x)</li>
+    <li>}</li>
+    <strong>this will not only perform the function but actually pass that value out as a "return"</strong>
+</ul>
+
+<p class="bg-dark text-light">Higher order functions are functions that either have other functions passed to them or return other functions.</p>
+<ul><strong>defines a function that will count up as long as it hasnt reached 100 but only once when called:</strong>
+  <li>var count = undefined</li>
+  <li>function countToHundred() {</li>
+  <li>if (count === undefined) {</li>
+  <li>  count = 0;</li>
+  <li>  console.log(count+1);</li>
+  <li>  count++;</li>
+  <li> }</li>
+  <li> else if (count <= 99) {</li>
+  <li>  console.log(count+=1);</li>
+  <li> }</li>
+  <li> else {</li>
+  <li>  console.log("finished!")</li>
+  <li> }</li>
+  <li>}</li>
+</ul>
+<ul><strong>calls the function above once every 1000ms or once a second:</strong>
+  <li>setInterval(countToHundred,1000)</li>
+</ul>
+
+<p class="bg-dark text-light">an array is a data structure javascript uses to store information.</p>
