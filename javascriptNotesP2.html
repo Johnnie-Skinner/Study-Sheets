@@ -47,8 +47,6 @@
         <li>console.log("hi " + person2);</li>
         <li>console.log("hi " + person3);</li>
     </ul><strong>called with: greet("Harry","Ron","Hermione");</strong>
-  </body>
-</html>
 
 <p class="bg-dark text-light">up until now we have used console.log to print our returned values into the console. This is only useful to test outputs. Much more useful is the return funtion.</p>
 <ul><strong>return:</strong>
@@ -80,3 +78,70 @@
 </ul>
 
 <p class="bg-dark text-light">an array is a data structure javascript uses to store information.</p>
+<p class="bg-dark text-light">instead of writing 4 seperate variables you can write an array: var numbers = [1,2,3,4];</p>
+<p class="bg-dark text-light"> this array is automatically indexed starting with zero and to access or change the array you use index notation:</p>
+<ul>
+  <li><strong>to access the above array:</strong></li>
+  <li>friends[1]</li>
+  <li>returns: 2</li>
+  <li><strong>and to change or add data:</strong></li>
+  <li>numbers[4] = 5</li>
+  <li><strong>which in this case adds 5 to the array.</strong></li>
+</ul>
+
+<p class="bg-dark text-light">built in methods for arrays:</p>
+<ul>
+  <li>push/pop</li>
+    <ul>
+      <li>push adds to the end of an array:
+        <ul>to add green to the end of an array:
+          <li>colors.push=("green")</li>
+        </ul>
+      </li>
+      <li>pop removes the last element of the array
+        <ul>
+          <li>colors.pop()</li>
+          <li>will return the last item in the array and then remove it from the array</li>
+        </ul>
+      </li>
+    </ul>
+  <li>shift/unshift
+    <ul>
+      <li>adds and removes from the beginning of the array but function the same as push/pop</li>
+      <li>unshift ADDS and shift removes (think british)</li>
+    </ul>
+  </li>
+  <li>indexOf
+    <ul>
+      <li>friends.indexOf("David")</li>
+      <li>will find the first instance of David in the array "friends" and return its index</li>
+    </ul>
+  </li>
+  <li>slice
+    <ul>
+      <li>is used to copy portions of an array</li>
+      <li>var citrus = fruits.slice(1,3);</li>
+      <li>slices out index 1 and 2 of the array fruits and puts it in a new array "citrus"</li>
+    </ul>
+  </li>
+</ul>
+
+<p class="bg-dark text-light">you can use forEach to do something to each index in an array:</p>
+<ul><strong>basic format:</strong>
+  <li>colors.forEach(function(color){</li>
+    <li>//fill in function definition//</li>
+    <li>});</li>
+</ul>
+
+<p class="bg-dark text-light">the .forEach's generic internal function requires one but can take up to 3 arguments. these are in a specific order:</p>
+<ol><strong>array.forEach(function(E,I,arr){...});</strong>
+  <li>E - represents each element in the loop</li>
+  <li>I - represents the index of said element</li>
+  <li>arr - represents the array that .forEach was called on</li>
+</ol>
+<p class"bg-dark text-light">to remove an item from an array use .splice</p>
+<ul>in this example you splice out @ the variable "index" and you splice out 1 item in the array "todos".
+  <li>todos.splice(index,1);</li>
+</ul>
+  </body>
+</html>
